@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="99bcca0d-7f33-41fd-9f73-8b7310f6e721" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/category-archive.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/tag-archive.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/year-archive.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-08-15-test-of-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-08-17-thread-of-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-08-20-ora30004-of-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-08-24-argument_resolver-of-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-09-09-ora14253-of-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +32,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="JinseobBae &lt;bbb1125@naver.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -42,6 +58,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,11 +68,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631884523413</updated>
-      <workItem from="1631884524579" duration="503000" />
+      <workItem from="1631884524579" duration="593000" />
+      <workItem from="1631968277535" duration="1081000" />
     </task>
+    <task id="LOCAL-00001" summary="remote 테마 아닌 jekyll 로 직접 빌드하기 (1)">
+      <created>1631885062717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631885062718</updated>
+    </task>
+    <task id="LOCAL-00002" summary="remote 테마 아닌 jekyll 로 직접 빌드하기 (1)">
+      <created>1631885099516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631885099516</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remote 테마 아닌 jekyll 로 직접 빌드하기 (1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="remote 테마 아닌 jekyll 로 직접 빌드하기 (1)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="571" y="106" key="CommitChangelistDialog2" timestamp="1631885098989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="571" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.-558.1920.1040@0.0.1920.1040" timestamp="1631885098989" />
   </component>
 </project>
