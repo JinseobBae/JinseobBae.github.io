@@ -1,0 +1,4 @@
+I"�<h2 id="오류">오류</h2>
+<pre><code class="language-oracle">ORA-30004: when using SYS_CONNECT_BY_PATH function, cannot have separator as part of column value
+</code></pre>
+:ET

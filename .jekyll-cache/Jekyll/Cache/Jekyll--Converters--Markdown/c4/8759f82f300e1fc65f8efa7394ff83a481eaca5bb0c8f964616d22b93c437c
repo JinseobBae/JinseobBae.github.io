@@ -1,0 +1,4 @@
+I"<h2 id="오류">오류</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java.sql.SQLException: ORA-30004: when using SYS_CONNECT_BY_PATH function, cannot have separator as part of column value
+</code></pre></div></div>
+:ET
