@@ -1,0 +1,371 @@
+I"z)<p>SQLD 시험을 보기 전에 봤던 정리입니다.</p>
+
+<p>오라클 / MySQL / MS-SQL을 구분은 해놓지 않았습니다.</p>
+
+<p>제 기준에서 작성한거라 중요하지만 없는 것도 있습니다.</p>
+
+<p>제가 시험 봤을 때에는 주관식으로 <code class="language-plaintext highlighter-rouge">NTILE</code>와 <code class="language-plaintext highlighter-rouge">LPAD</code>, <code class="language-plaintext highlighter-rouge">ROWNUM</code>이 나왔던 기억이 있습니다.</p>
+
+<h3 id="1문자">1.문자</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>문자열의 알파벳 문자를 소문자로 바꾸어 준다</td>
+      <td>LOWER(문자열)</td>
+    </tr>
+    <tr>
+      <td>문자열의 알파벳 문자를 대문자로 바꾸어 준다</td>
+      <td>UPPER(문자열)</td>
+    </tr>
+    <tr>
+      <td>문자나 숫자를 ASCII 코드 번호로 바꾸어 준다</td>
+      <td>ASCII(문자)</td>
+    </tr>
+    <tr>
+      <td>ASCII 코드 번호를 문자나 숫자로 바꾸어 준다</td>
+      <td>CHR/CHR(ASCII번호)</td>
+    </tr>
+    <tr>
+      <td>문자열1과 문자열2를 연결한다</td>
+      <td>CONCAT(문자열1,문자열2)</td>
+    </tr>
+    <tr>
+      <td>문자열 m위치에서 n개에 해당하는 문자를 돌려준다</td>
+      <td>SUBSTR/SUBSTRING(문자열,m,n)</td>
+    </tr>
+    <tr>
+      <td>문자열의 개수를 숫자값으로 돌려준다</td>
+      <td>LENGTH/LEN(문자열)</td>
+    </tr>
+    <tr>
+      <td>문자열의 첫 문자부터 확인해서 지정문자가 나타나면 해당문자를 제거한다</td>
+      <td>LTRIM(문자열,지정문자)</td>
+    </tr>
+    <tr>
+      <td>문자열의 끝 문자부터 확인해서 지정문자가 나타나면 해당문자를 제거한다</td>
+      <td>RTRIM(문자열,지정문자)</td>
+    </tr>
+    <tr>
+      <td>문자열에서 머리말, 꼬리말, 양쪽에 있는 지정문자를 제거한다</td>
+      <td>TRIM([옵션] 지정문자 from 문자열)</td>
+    </tr>
+    <tr>
+      <td>문자열의 길이가 n이 되도록 왼쪽부터 문자식으로 채운다.</td>
+      <td>LPAD(컬럼, 길이, 문자열)</td>
+    </tr>
+    <tr>
+      <td>문자열의 길이가 n이 되도록 오른쪽부터 문자식으로 채운다.</td>
+      <td>RPAD(컬럼, 길이, 문자열)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="2숫자">2.숫자</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 숫자의 절대값을 돌려준다</td>
+      <td> ABS(숫자)</td>
+    </tr>
+    <tr>
+      <td> 숫자가 양수인지, 음수인지, 0인지를 구별한다</td>
+      <td> SIGN(숫자)</td>
+    </tr>
+    <tr>
+      <td> 숫자1을 숫자2로 나누어 나머지 값을 리턴한다</td>
+      <td> MOD(숫자1, 숫자2)</td>
+    </tr>
+    <tr>
+      <td> 숫자보다 크거나 같은 최소 정수를 리턴한다 (올림)</td>
+      <td> CEIL/CEILING(숫자)</td>
+    </tr>
+    <tr>
+      <td> 숫자보다 작거나 같은 최대 정수를 리턴한다 (내림)</td>
+      <td> FLOOR(숫자)</td>
+    </tr>
+    <tr>
+      <td> 숫자를 소수점 m자리에서 반올림하여 리턴한다 (반올림)</td>
+      <td> ROUND(숫자, m)</td>
+    </tr>
+    <tr>
+      <td> 숫자를 소수점 m자리에서 잘라서 버린다 (반내림)</td>
+      <td> TRUNC(숫자, m)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="3-날짜">3. 날짜</h3>
+<p>|   기능   |   함수   |
+| — | — |
+|    현재 날짜와 시각을 출력한다   |    SYSDATE/GETDATE()   |
+|    날짜데이터에서 년/월/일 데이터를 뽑아낸다   |    EXTRACT/DATEPART(옵션 from 날짜)   |</p>
+
+<h3 id="4-형변환">4. 형변환</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 문자열을 숫자로 변환한다</td>
+      <td> TO_NUMBER(문자열)</td>
+    </tr>
+    <tr>
+      <td> 숫자나 날짜를 FORMAT 형태로 문자열 타입으로 변환한다</td>
+      <td> TO_CHAR(숫자|날짜,FORMAT)</td>
+    </tr>
+    <tr>
+      <td> 문자열을 FORMAT 형태로 날짜 타입으로 변환한다</td>
+      <td> TO_DATE(문자열, FORMAT)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="5-null-조건">5. Null 조건</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 표현식1의 결과값이 NULL이면 표현식2의 값을 출력한다</td>
+      <td> NVL/ISNULL(표현식1,표현식2)</td>
+    </tr>
+    <tr>
+      <td> 표현식1의 결과값이 NULL이 아니면 표현식2의 값을 NULL이면 표현식3을 출력한다 </td>
+      <td> NVL2(표현식1, 표현식2, 표현식3)</td>
+    </tr>
+    <tr>
+      <td> 표현식1이 표현식2와 같으면 NULL을, 같지 않으면 표현식1을 리턴한다</td>
+      <td> NULLIF(표현식1,표현식2)</td>
+    </tr>
+    <tr>
+      <td> 임의의 개수 표현식에서 NULL이 아닌 최초의 표현식을 나타낸다</td>
+      <td> COALESCE(표현식1,2,3…)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="6-연산">6. 연산</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> NULL값을 포함한 행의 개수를 출력한다</td>
+      <td> COUNT(*)</td>
+    </tr>
+    <tr>
+      <td> 표현식의 값이 NULL 값인 것을 제외한 행의 수를 출력한다</td>
+      <td> COUNT(표현식)</td>
+    </tr>
+    <tr>
+      <td> 표현식의 NULL값을 제외한 합계를 출력한다</td>
+      <td> SUM(표현식)</td>
+    </tr>
+    <tr>
+      <td> 표현식의 NULL값을 제외한 평균을 출력한다</td>
+      <td> AVG(표현식)</td>
+    </tr>
+    <tr>
+      <td> 표현식의 최대값을 출력한다</td>
+      <td> MAX(표현식)</td>
+    </tr>
+    <tr>
+      <td> 표현식의 최소값을 출력한다</td>
+      <td> MIN(표현식)</td>
+    </tr>
+    <tr>
+      <td> 표현식의 표준편차를 출력한다</td>
+      <td> STDDEV(표현식)</td>
+    </tr>
+    <tr>
+      <td> 표현식의 분산을 출력한다</td>
+      <td> VARIAN(표현식)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="7-계층형질의--오라클-">7. 계층형질의 ( 오라클 ) </h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 루트데이터면1, 하위데이터면2. LEAF 데이터까지 1씩 증가</td>
+      <td> LEVEL</td>
+    </tr>
+    <tr>
+      <td> 해당데이터가 리프면1, 그렇지않으면 0</td>
+      <td> CONNECT_BY_ISLEAF</td>
+    </tr>
+    <tr>
+      <td> 해당데이터가 조상으로서 존재하면1, 그렇지않으면 0</td>
+      <td> CONNECT_BY_ISCYCLE</td>
+    </tr>
+    <tr>
+      <td> 루트데이터부터 현재전개할 데이터까지의 경로를 표시한다</td>
+      <td> SYS_CONNECT_BY_PAHTH(칼럼,분리자)</td>
+    </tr>
+    <tr>
+      <td> 현재전개할 데이터의 루트데이터를 표시한다</td>
+      <td> CONNECT_BY_ROOT 칼럼</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="8-통계">8. 통계</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 소그룹 간의 소계를 계산. 병렬로 수행이 가능하며. 시간 및 데이터에 적합</td>
+      <td> ROLLUP</td>
+    </tr>
+    <tr>
+      <td> 소규모 그룹 그룹 간 다차원적인 소계를 계산. ROLLUP에 비해 다양한 데이터</td>
+      <td> CUBE</td>
+    </tr>
+    <tr>
+      <td> 원하는 항목에 대한 소계를 계산한다</td>
+      <td> GROUPING SETS</td>
+    </tr>
+    <tr>
+      <td> 표현식에서 나온 값을 숫자만큼 등분한다. </td>
+      <td> NTILE(숫자) over ([partition by 컬럼] order by 표현식)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="9-순위-ex--총-10개의-순위를-정할-때--동일-순위-3건">9. 순위 (EX : 총 10개의 순위를 정할 때 / 동일 순위 3건)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 순위 구하기. 동일한 값은 동일한 순위 부여</td>
+      <td> RANK() over</td>
+      <td>  1, 2, 3, 4, 5, 5, 5, 8, 9, 10</td>
+    </tr>
+    <tr>
+      <td> 순위 구하기. 동일 순위 시 하나의 건수로 취급</td>
+      <td> DENSC_RANK() over</td>
+      <td>  1, 2, 3, 4, 5, 5, 5, 6, 7, 8</td>
+    </tr>
+    <tr>
+      <td> 순위 구하기. 동일한 순위는 없다</td>
+      <td> ROW_NUMBER() over</td>
+      <td>  1, 2, 3, 4, 5, 6, 7, 8, 9, 10</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="10-그룹-별-기능">10. 그룹 별 기능</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 파티션 별로 합을 구한다.</td>
+      <td>SUM(컬럼1) over (partition by 컬럼2) </td>
+    </tr>
+    <tr>
+      <td> 파티션 별로 최대값을 구한다. </td>
+      <td>MAX(컬럼1) over (partition by 컬럼2)</td>
+    </tr>
+    <tr>
+      <td> 파티션 별로 최소값을 구한다.</td>
+      <td> MIX(컬럼1) over (partition by 컬럼2)</td>
+    </tr>
+    <tr>
+      <td> 파티션 별로 평균을 구한다.</td>
+      <td> AVG(컬럼1) over (partition by 컬럼2)</td>
+    </tr>
+    <tr>
+      <td> 파티션 별로 가장 먼저 나온 값</td>
+      <td>FIRST_VALUE(컬럼1) over (partition by 컬럼2) </td>
+    </tr>
+    <tr>
+      <td> 파티션 별로 가장 나중에 나온 값</td>
+      <td>LAST_VALUE(컬럼1) over (partition by 컬럼2) </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>컬럼2를 기준으로 컬럼1에 대한 연산을 수행</strong></p>
+
+<h3 id="11-범위">11. 범위</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>현재 행을 기준으로 파티션 내의 첫 번째 행까지 범위를 지정 (반복 누적)</td>
+      <td> RANGE UNBOUNDED PRECEDING</td>
+    </tr>
+    <tr>
+      <td> 현재 행을 기준으로 앞에서 숫자1만큼, 뒤에서 숫자2만큼을 범위로 지정</td>
+      <td> ROWS BETWEEN 숫자1 PRECEDING AND 숫자2  FOLLOWING</td>
+    </tr>
+    <tr>
+      <td> 현재 행을 포함해서 파티션 내의 마지막 행까지를 범위로 지정</td>
+      <td> ROWS BETWEEN CURRENT ROW AND  UNBOUNDED FOLLOWING</td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

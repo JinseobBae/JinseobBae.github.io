@@ -1,0 +1,22 @@
+I"�<p>자바에서 파일을 만들어서 FTP로 전송하는 기능을 구현하게 되었다.</p>
+
+<p>파일에 대한 개념이 확실하지 않아서 많은 시행착오가 있었다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="s">"test.txt"</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>경로설정없이 파일명만 적었을 때 내가 만든 파일이 어느 위치에 생성되었는지 제대로 알지 못해서 고생했다.</p>
+
+<p>멍청하게 고민하다가 로그 한번 찍어보고 바로 알게 되었다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">톰캣 : apache-tomcat\bin</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">웹로직 : \base_domain</code></p>
+
+<p>프로젝트 내부가 아닌 프로젝트를 실행중인 WAS 내부에 파일이 생성이 되었다.</p>
+
+<p>톰캣은 bin에 웹로직은 도메인 바로 밑에 생겼다.</p>
+
+<p>처음 알았다. 아직 많이 부족한 것 같다.</p>
+
+:ET
