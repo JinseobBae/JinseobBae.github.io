@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[Vue.js] File 생성 시 기본 경로"
+title: "[Vue.js] git 없이 프로젝트 시작하기 "
 categories: [study, vuejs]
 tags: [vuejs]
 ---
 
 vue.js 프로젝트를 생성 할 때 별다른 옵션이 없으면 자동으로 .git을 만들어주는듯하다.
 
-```shell script
+```
 vue create project_name
 ```
 
@@ -17,7 +17,7 @@ vue create project_name
 
 만약에 하나의 repository로 관리하고 싶으면
 
-```shell script
+```
 vue create project_name --no-git
 ```
 
