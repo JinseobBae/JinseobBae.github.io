@@ -184,7 +184,7 @@ paginate: 5
 
 # Disqus comments
 disqus:
-  shortname: "https-jinseobbae-github-io"
+  shortname: "jinseobbae-github-io"
 
 # Gitment comments
 # gitment:
