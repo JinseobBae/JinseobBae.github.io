@@ -183,8 +183,8 @@ yat:
 paginate: 5
 
 # Disqus comments
-# disqus:
-#   shortname: "Your Disqus username"
+disqus:
+  shortname: "https-jinseobbae-github-io"
 
 # Gitment comments
 # gitment:
