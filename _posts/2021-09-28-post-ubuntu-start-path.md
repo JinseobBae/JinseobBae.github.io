@@ -3,6 +3,7 @@ layout: post
 title: "[Ubuntu] 시작 위치 변경하기"
 categories: [ubuntu]
 tags: [ubuntu]
+comments: true
 ---
 
 
