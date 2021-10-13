@@ -66,7 +66,7 @@ yat:
 # content_width: "920px"
 
 # Google analytics
-# google_analytics: [Tracking ID]
+google_analytics: G-5DB409RK4W
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
