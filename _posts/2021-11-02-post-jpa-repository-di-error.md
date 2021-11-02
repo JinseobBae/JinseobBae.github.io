@@ -86,9 +86,10 @@ public class MyApplication {
 패키지를 명세해주면 정상적으로 작동한다 ㅎㅎ 
        
        
+       
 
-
-
+참고
+- [http://daplus.net/](http://daplus.net/spring-spring-boot%EC%97%90%EC%84%9C-repository-%EC%A3%BC%EC%84%9D%EC%9D%B4-%EB%8B%AC%EB%A6%B0-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A5%BC-autowire-%ED%95%A0-%EC%88%98-%EC%97%86%EC%8A%B5/)
 
 
 
