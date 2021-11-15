@@ -2,7 +2,7 @@
 layout: post
 title: "[SPRING/JPA] Spring Data의 Example 활용하기"
 categories: [SPRING, JPA]
-tags: [spring, jpa]
+tags: [spring, jpa, example]
 comments: true
 ---
 
@@ -306,7 +306,7 @@ withMatcher는 원하는 필드 1개에 대해서 조건을 설정하는 것이�
 
 withStringMatcher는 모든 String 필드에 대해 조건을 설정하는 것이다.
 
-**설정 순서에 상관없이 withMatcher의 설정이 우선된다.(필드에 직접 설정한 것이 우선된다.)**
+**2개 모두 사용 시 설정 순서에 상관없이 withMatcher의 설정이 우선된다.(필드에 직접 설정한 것이 우선된다.)**
 
 숫자는 따로 제어가 가능한지는 아직 모르겠다..
 
