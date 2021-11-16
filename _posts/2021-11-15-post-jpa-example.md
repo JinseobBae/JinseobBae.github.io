@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[SPRING/JPA] Spring Data의 Example 활용하기"
+title: "[SPRING/JPA] Spring Data의 Example 활용하기 (QBE)"
 categories: [SPRING, JPA]
 tags: [spring, jpa, example]
 comments: true
 ---
 
 
-Spring data jpa를 사용하면 Example 이라는 객체를 이용해 데이터 조회(find, count, exist)를 할 수 있다.
+Spring data jpa를 사용하면 Example 이라는 객체를 이용해 데이터 조회(find, count, exist)를 할 수 있다. (Query by Example)
 
 example과 exampleMatcher라는 전략설정(?)을 이용해 해당 조건에 만족하는 데이터를 조회하는 기능이다.
 
@@ -373,12 +373,10 @@ default로 하면 equal(=) 로 조회를 하는데 exact랑 어떤 차이가 있
 
 사실 간단한 조회에서는 직접 쿼리를 생성하거나 repository를 이용해서 하는게 더 편한 것 같다.
 
-하지만 여러가지 값을 통해서 조회를 할때에는 Example을 사용하는게 더 깔끔하다고 생각한다.
+하지만 여러가지 값을 통해서 조회를 할때에는 Exapmle을 잘 이용하면 깔끔하게 구현할 수 있을 듯 하다.
 
-repository에서 `findByAAndBAndCAndDAnd....(Long A, String B,......)` 이렇게 만들면 너무 지저분 할 듯한 느낌이...
-
-Exapmle을 잘 이용하면 깔끔하게 구현할 수 있을 듯 하다.
-
+max, min 등이 없는듯해서 통계쪽은 어려울 것 같기도하다.  
+  
 ExampleMatcher는 언급한 기능 외에도 withIgnoreNullValues, withNullHandler 등 여러가지 기능을 제공하고 있다.
 
 아직 실제로 사용은 안해봐서 얼마나 사용성이 있을지는 모르겠다.
