@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[SPRING/JPA] Spring Data의 Example 활용하기"
+title: "[SPRING/JPA] Spring Data의 Example 활용하기 (QBE)"
 categories: [SPRING, JPA]
-tags: [spring, jpa]
+tags: [spring, jpa, example]
 comments: true
 ---
 
 
-Spring data jpa를 사용하면 Example 이라는 객체를 이용해 데이터 조회(find, count, exist)를 할 수 있다.
+Spring data jpa를 사용하면 Example 이라는 객체를 이용해 데이터 조회(find, count, exist)를 할 수 있다. (Query by Example)
 
 example과 exampleMatcher라는 전략설정(?)을 이용해 해당 조건에 만족하는 데이터를 조회하는 기능이다.
 
@@ -21,7 +21,7 @@ Example은 interface로 구현체는 TypedExample가 있다.
 
 선언 시 Example.of(객체)로 쉽게 생성이 가능하다.
 
-`example.of 사진넣기` 
+![image](https://user-images.githubusercontent.com/29051992/141815133-b770b0a9-ec3a-40f2-a7ae-d86058a10fb3.png)
 
 기본적으로 설정되는 ExampleMatcher가 있지만, 사용자가 원할 경우 직접 생성해서 선언이 가능하다.
 
@@ -36,9 +36,9 @@ Spring data jpa를 사용한다면 Respoitory가 JpaRepository를 상속해주�
 
 JpaRepository에서 이미 QueryByExampleExecutor를 상속받고 있으며, 기본 구현체인 SimpleJpaRepository에 구현이 되어있다.
 
-`jpaRespository QueryByExampleExecutor 상속 사진`
+![image](https://user-images.githubusercontent.com/29051992/141815189-eeb1351b-9ca7-4e59-9f4e-b53a869d2aac.png)
 
-`simpleRepository에서 exampleExcutor 구현 사진`
+![image](https://user-images.githubusercontent.com/29051992/141815242-f8ee2dfd-2025-4f28-ba54-fda61e6a87bb.png)
 
 
 ### Example 활용
@@ -124,7 +124,7 @@ Example 생성 시 별도로 설정하지 않으면 matching이 기본값으로 
 
 **사실 matching과 matchingAll은 똑같다. 소스를 확인해보면 matching으로 생성 시 matchingAll로 설정을 해준다. 아직 만드는 중인지..?**
 
-`matching 사진 넣기`
+![image](https://user-images.githubusercontent.com/29051992/141815354-c42390c8-5353-4f5e-952a-dea60121f03c.png)
 
 matching(matchingAll)은 null이 아닌 필드를 **and**로 엮어주고, matchingAny는 **or**로 엮어준다.
 
@@ -166,7 +166,7 @@ select
  
 ### matchingAny
 
-any는 말그대로 아무거나 하나만 일치하면 된다. 때문에 or로 조건문을 생성해준다.
+matchingAny는 말그대로 아무거나 하나만 일치하면 된다. 때문에 or로 조건문을 생성해준다.
 
 ```java
 @Test
@@ -306,7 +306,7 @@ withMatcher는 원하는 필드 1개에 대해서 조건을 설정하는 것이�
 
 withStringMatcher는 모든 String 필드에 대해 조건을 설정하는 것이다.
 
-**설정 순서에 상관없이 withMatcher의 설정이 우선된다.(필드에 직접 설정한 것이 우선된다.)**
+**2개 모두 사용 시 설정 순서에 상관없이 withMatcher의 설정이 우선된다.(필드에 직접 설정한 것이 우선된다.)**
 
 숫자는 따로 제어가 가능한지는 아직 모르겠다..
 
@@ -373,12 +373,10 @@ default로 하면 equal(=) 로 조회를 하는데 exact랑 어떤 차이가 있
 
 사실 간단한 조회에서는 직접 쿼리를 생성하거나 repository를 이용해서 하는게 더 편한 것 같다.
 
-하지만 여러가지 값을 통해서 조회를 할때에는 Example을 사용하는게 더 깔끔하다고 생각한다.
+하지만 여러가지 값을 통해서 조회를 할때에는 Exapmle을 잘 이용하면 깔끔하게 구현할 수 있을 듯 하다.
 
-repository에서 `findByAAndBAndCAndDAnd....(Long A, String B,......)` 이렇게 만들면 너무 지저분 할 듯한 느낌이...
-
-Exapmle을 잘 이용하면 깔끔하게 구현할 수 있을 듯 하다.
-
+max, min 등이 없는듯해서 통계쪽은 어려울 것 같기도하다.  
+  
 ExampleMatcher는 언급한 기능 외에도 withIgnoreNullValues, withNullHandler 등 여러가지 기능을 제공하고 있다.
 
 아직 실제로 사용은 안해봐서 얼마나 사용성이 있을지는 모르겠다.
