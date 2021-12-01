@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JAVA] Reflection을 이용해서 인스턴스 생성하기"
+title: "[JAVA] Reflection을 이용해서 객체 인스턴스 생성하기"
 categories: [java]
 tags: [java]
 ---
