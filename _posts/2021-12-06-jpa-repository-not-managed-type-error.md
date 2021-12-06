@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JPA] Respository 만들 떄 Not a managed type: class java.lang.Object 오류"
+title: "[JPA] Respository 만들 때 Not a managed type: class java.lang.Object 오류"
 categories: [error, jpa]
 tags: [error, jpa]
 ---
