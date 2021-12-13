@@ -39,7 +39,7 @@ Specification을 사용하려면 repository에서 `JpaSpecificationExecutor<T>` 
 
 ## 날짜 조건 포함시키기  
   
-조건을 추가하려면 repository에 Specification<T>의 `toPredicate`를 구현하면 된다.
+조건을 추가하려면 repository에 Specification<T>의 `toPredicate` 를 구현하면 된다.
  
 클래스를 생성해서 구현하려면 JpaRepository까지 구현해야하니까 repository에 default로 만들었다.  
   
