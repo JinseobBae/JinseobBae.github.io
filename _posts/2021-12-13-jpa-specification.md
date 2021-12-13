@@ -27,7 +27,7 @@ Specification을 사용하려면 repository에서 `JpaSpecificationExecutor<T>` 
   
 ```java 
   
-  public intterface MyRepository extends JpaRepository<MyEntity, Long>, JpaSpecificationExecutor<MyEntity>{
+  public interface MyRepository extends JpaRepository<MyEntity, Long>, JpaSpecificationExecutor<MyEntity>{
   }
   
 ```  
