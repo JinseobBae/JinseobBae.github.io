@@ -75,6 +75,12 @@ public class GlobalBindingInitializer implements WebBindingInitializer{
 
 이 후 버전은 `RequestMappingHandlerAdapter`을 사용하면 된다고 한다.
 
+사실 `RequestMappingHandlerAdapter`을 사용하는 경우 new 로 생성하기보단 기존걸 가져와서 추가하는 방법이 더 안전할 것 같기는 하다.
+
+Spring 5.x 기준 자체적으로 `RequestMappingHandlerAdapter` bean을 생성 할 떄 인자값이 3개나 있고 set 해주는 항목들도 많아서...
+
+직접 new로 생성하면 이상하게 동작 할 수 있을 것 같기도 하다.
+
 ```java
 // AnnotationMethodHandlerAdapter 사용
 @Bean
@@ -137,11 +143,7 @@ public class WebConfig extends WebMvcConfigurationSupport{
 
 이외에도 다양한 방법이 있는듯하다.
 
-`RequestMappingHandlerAdapter`을 사용하는 경우 new 로 생성하기보단 기존걸 가져와서 추가하는 방법이 더 안전할 것 같기는 하다.
 
-Spring 5.x에서는 `RequestMappingHandlerAdapter` 자체적으로 bean을 생성 할 떄 인자값이 3개나 있고 set 해주는 항목들도 많아서...
-
-직접 new로 생성하면 이상하게 동작 할 수 있을 것 같기도 하다.
 
 
 
