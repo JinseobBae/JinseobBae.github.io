@@ -39,14 +39,15 @@ public interface MyRepository extends CommonRepository<MyEntity, Long>{
 
 ## 원인
 
+**Object 라는 타입의 entity는 등록이 되어있지 않기때문. Object는 entity 객체가 아니니까!**
 
-좀 더 상세하게는 로그를 보면 다음과 같은 항목이 있었다.
+**Repository를 생성 할 때 명시한 entity 객체가 내부에서 entity 객체로 인식되지 않은 문제다.**
+
+내 케이스는 제네릭을 이용한것이 문제였다.
 
 ```
 Error creating bean with name 'commonRepository' defined in com.my.jpa.repository.CommonRepository defined in @EnableJpaRepositories declared on MyApplication ....
 ```
-
-CommonRepository을 생성하면서 문제가 생겼다.
 
 Spring에서 repository의 구현체를 만들 때 해당 repository가 관리해야하는 Entity의 타입을 찾지 못해서 발생하는 에러다.
 
@@ -56,8 +57,14 @@ spring-data-jpa에서 entity information을 생성할 떄 @Entity로 등록한 J
 
 하지만 그냥 `제네릭(T)`로 구현 시 `T(Object)` 라는 entity가 없기 때문에 관리할 수 없는 타입이라고 나오게 된다.
 
-Object 라는 타입의 entity는 등록이 되어있지 않기때문에! 
 
+직접 entity 클래스를 입력했음에도 불구하고 발생한다면, 설정한 Entity가 정상적으로 Entity객체로 등록이 안된거라고 본다.
+
+ - @Entity 누락 
+ - EntityScan이 안됨 (직접 @EntityScan으로 패키지 지정 시)
+ - 잘못된 클래스 입력..?
+
+다음과 같은 경우가 있을 듯 하다.
 
 ## 해결
 
