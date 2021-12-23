@@ -103,7 +103,7 @@ public RequestMappingHandlerAdapter requestMappingHandlerAdapter(){
 
 `ConfigurableWebBindingInitializer` 상속하는 방법에 대한 글도 찾았다. 글에 코드가 잘 정리되어 있으니 참고하면 좋을듯 하다.
 
-(https://developer-ljo.tistory.com/19)
+[https://developer-ljo.tistory.com/19](https://developer-ljo.tistory.com/19)
 
 
 ## WebMvcConfigurationSupport
@@ -150,9 +150,9 @@ public class WebConfig extends WebMvcConfigurationSupport{
 
 ## 참고
 
-- https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/custom-web-binding-initializer.html
-- https://stackoverflow.com/questions/1268021/how-can-i-register-a-global-custom-editor-in-spring-mvc
-- https://developer-ljo.tistory.com/19
+- [https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/custom-web-binding-initializer.html](https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/custom-web-binding-initializer.html)
+- [stackoverflow](https://stackoverflow.com/questions/1268021/how-can-i-register-a-global-custom-editor-in-spring-mvc)
+- [https://developer-ljo.tistory.com/19](https://developer-ljo.tistory.com/19)
 
 
 
