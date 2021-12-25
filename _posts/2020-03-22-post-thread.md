@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA] 현재 Thread에 특정 클래스가 로드되었는지 확인하기"
-categories: [study, java]
+categories: [java]
 tags: [java, thread]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA] UsernamePasswordAuthenticationFilter 이용한 커스텀 필터 설정"
-categories: [study, spring]
+categories: [spring]
 tags: [java , spring, custom filter]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA] Weblogic 환경에서 Rest Template 작동 안할 때(EOF Exception)"
-categories: [java, error]
+categories: [java]
 tags: [java, weblogic, error]
 ---
 

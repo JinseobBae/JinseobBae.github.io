@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SPRING/JPA] JPA Repository가 정상적으로 DI 되지 않는 현상"
-categories: [error, jpa]
+categories: [jpa]
 tags: [jpa, error, spring]
 ---
 

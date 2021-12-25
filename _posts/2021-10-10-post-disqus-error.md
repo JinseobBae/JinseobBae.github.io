@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[DISQUS] disqus 댓글 적용 시 'we were unable to load Disqus' 문제"
-categories: [etc]
+categories: [disqus]
 tags: [git, disqus]
 comments: true
 ---

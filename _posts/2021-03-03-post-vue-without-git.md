@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Vue.js] git 없이 프로젝트 시작하기 "
-categories: [study, vuejs]
+categories: [vuejs]
 tags: [vuejs]
 ---
 

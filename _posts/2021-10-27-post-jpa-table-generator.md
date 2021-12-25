@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SPRING/JPA] @TableGenerator로 ID 할당하기 "
-categories: [SPRING, JPA]
+categories: [jpa]
 tags: [spring, jpa]
 comments: true
 ---

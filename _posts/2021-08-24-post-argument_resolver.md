@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA/SPRING] Argument resolver java config로 구현하기"
-categories: [study, spring]
+categories: [spring]
 tags: [java, spring, config]
 ---
 

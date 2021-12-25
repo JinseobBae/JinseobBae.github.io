@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA] WorkbookFactory 기능 엑셀 업로드 xls, xlsx 지원"
-categories: [study, java]
+categories: [java]
 tags: [java , excel]
 ---
 

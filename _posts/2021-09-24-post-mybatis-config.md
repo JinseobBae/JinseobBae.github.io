@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA/SPRING] Mybatis xml config를 java config로 변경해보기"
-categories: [study, java, spring]
+categories: [spring]
 tags: [java, mybatis, spring]
 ---
 

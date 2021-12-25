@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SPRING] Spring boot / Freemarker 사용 시 jspTaglib 문제 "
-categories: [SPRING]
+categories: [spring]
 tags: [spring, freemarker]
 comments: true
 ---

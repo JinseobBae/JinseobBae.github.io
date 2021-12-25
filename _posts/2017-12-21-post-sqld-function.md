@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SQLD] 시험보기 전에 한 번 보는 SQL 간단한 함수들"
-categories: [study, sql]
+categories: [sqld]
 tags: [sqld]
 ---
 

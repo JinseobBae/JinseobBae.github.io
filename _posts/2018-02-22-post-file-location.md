@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA] File 생성 시 기본 경로"
-categories: [study, java]
+categories: [java]
 tags: [java , file]
 ---
 

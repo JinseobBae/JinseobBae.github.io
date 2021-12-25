@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SPRING/JPA] Spring Data의 Example 활용하기 (QBE)"
-categories: [SPRING, JPA]
+categories: [jpa]
 tags: [spring, jpa, example]
 comments: true
 ---

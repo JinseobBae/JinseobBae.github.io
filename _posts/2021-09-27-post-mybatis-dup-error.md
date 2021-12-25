@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA/MYBATIS] XML fragments parsed from previous mappers already contains value for 에러"
-categories: [error, mybatis]
+categories: [mybatis]
 tags: [mybatis, error]
 ---
 
