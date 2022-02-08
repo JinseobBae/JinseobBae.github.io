@@ -27,7 +27,8 @@ Builder간 extends가 가능하게 해주는 대신 계층에 있는 모든 클�
 
 만약 한쪽에만 `@SuperBuilder`를 선언하면 컴파일 오류가 발생한다.
 
-- 부모 클래스에만 선언했을 경우
+
+1. 부모 클래스에만 선언했을 경우
 ```text
 error: constructor Parent in class Parent cannot be applied to given types;
 @Builder
@@ -37,7 +38,9 @@ error: constructor Parent in class Parent cannot be applied to given types;
   reason: actual and formal argument lists differ in length
 ```
 
-- 자식 클래스에만 선언했을 경우
+
+
+2. 자식 클래스에만 선언했을 경우
 ```text
 error: type ParentBuilder does not take parameters
 @SuperBuilder
