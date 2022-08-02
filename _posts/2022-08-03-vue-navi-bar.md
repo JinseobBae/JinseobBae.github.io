@@ -15,6 +15,12 @@ tags: [vuejs]
 
 반응형, router에 대한 지원도 해주기때문에 해당 컴포넌트를 선택했다.
 
+![image](https://user-images.githubusercontent.com/29051992/182426893-b10784b4-6204-4212-9ea2-6d7badc2dd2e.png)
+
+
+![image](https://user-images.githubusercontent.com/29051992/182426938-8f41c9b3-fe2c-46e5-a7b6-4b5fffd4a1a7.png)
+
+
 `vue-navigation-bar`는 Vue2, Vue3 모두 지원을 한다.
 
 현재 `5.0.0` 버전까지 나왔는데 Vue2는 `4.1.0` 버전을 사용해야 정상적으로 빌드가 된다.
@@ -35,7 +41,7 @@ Vue2로 실행 할 경우 4.1.0 버전으로 설치한다.
 
 ## 활용
 
-**Vue2 기준!**
+**Vue2 기준! (v4.1.0)**
 
 ### Import
 설치 후 main.js에 import 해주면 사용이 바로 가능하다.
@@ -105,8 +111,9 @@ const data = {
 
 더 자세한 사용법은 아래 사이트에서 확인 가능하다.
 
-[vue-navigation-bar github](https://github.com/johndatserakis/vue-navigation-bar)
-[vue-navigation-bar npm](https://www.npmjs.com/package/vue-navigation-bar)
+- [vue-navigation-bar github](https://github.com/johndatserakis/vue-navigation-bar)
+
+- [vue-navigation-bar npm](https://www.npmjs.com/package/vue-navigation-bar)
 
 
 ## 느낌
@@ -117,6 +124,6 @@ const data = {
 
 `vue-navigation-bar`는 단순한 사용법이지만 이미지, 애니메이션등 의외로 지원하는것도 많았다.
 
-또 지속적으로 개발되고 있다는것 또한 좋은 느낌이었다.
+또 지속적으로 개발되고 있다는것도 좋았다.
 
 
