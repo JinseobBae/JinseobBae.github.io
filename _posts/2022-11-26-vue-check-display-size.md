@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Vue.js] Vue에서 디스플레이 사이즈 구하기"
+title: "[Vue.js] vue에서 디스플레이 사이즈 구하기"
 categories: [vuejs]
 tags: [vuejs]
 ---
@@ -73,8 +73,10 @@ export default {
 **참고**
 
 ---
+
 - [stackoverflow](https://stackoverflow.com/questions/60322876/vuejs-way-to-detect-a-mobile-device-when-we-need-to-render-two-different-views)
 - [TCPschool.com](http://www.tcpschool.com/javascript/js_bom_screen)
+
 ---
 
 
