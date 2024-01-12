@@ -92,4 +92,4 @@ plugin.xml 에 만들어진 ToolWindow를 등록한다.
 
 참고
 
-- (https://plugins.jetbrains.com/docs/intellij/tool-windows.html)https://plugins.jetbrains.com/docs/intellij/tool-windows.html
+- https://plugins.jetbrains.com/docs/intellij/tool-windows.html
