@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JAVA] feign url values must be not be absolute 오류"
-categories: [fegin]
+categories: [feign]
 tags: [feign, error]
 ---
 
