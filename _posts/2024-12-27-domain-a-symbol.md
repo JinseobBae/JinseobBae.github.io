@@ -47,5 +47,5 @@ Java의 URI 객체로도 확인이 가능하다.
 
 
 참고
-- [URL 위키](https://en.wikipedia.org/wiki/URL#Syntax)
+- [URL 위키](https://en.wikipedia.org/wiki/URL#Syntax)
 
